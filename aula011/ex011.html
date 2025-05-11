@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <input type="text" name="country" id="country" placeholder="Digite seu País">
+    <button type="button" onclick="verPais()">Ver</button>
+    <div id="res"></div>
+
+    <script>
+        
+        let res = window.document.getElementById('res')
+        
+        function verPais() {
+            let input = document.getElementById('country') 
+            let pais = input.value
+            if (pais.toLowerCase() == 'brasil') {
+                res.innerHTML = 'Você é Brasileiro'
+            } else {
+                res.innerHTML = 'Você é estrangeiro'
+            }
+}
+    </script>
+</body>
+</html>
