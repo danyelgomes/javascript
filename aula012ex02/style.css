@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(4, 181, 240);
+    font-size: 1.2em;
+    font: normal 1.2em Arial;
+}
+
+section {
+    display: block;
+    position: relative;
+    margin-left: 50%;
+    margin-top: 10%;
+    transform: translate(-50%);
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+
+
+
+    * {
+        margin: 15px 0px 0px 0px;
+    }
+}
+
+input[type="number"] {
+    display: block;
+    margin-left: 5px;
+}
+button {
+    display: block;
+}
+section div {
+    display: flex;
+}
+
+div#res img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+div#res {
+    display: flex;
+    flex-flow: column;
+}
