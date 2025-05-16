@@ -1,5 +1,5 @@
 var btn = document.getElementsByTagName('button')[0]
-var res = document.getElementById('res')
+var res  = document.getElementById('res')
 
 btn.addEventListener('click', contar)
 btn.addEventListener('onkeydown', contar)
