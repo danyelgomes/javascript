@@ -1,16 +1,15 @@
-var btn = document.getElementsByTagName('button')[0]
-var res  = document.getElementById('res')
+let btn = document.getElementsByTagName('button')[0]
+let res  = document.getElementById('res')
 
 btn.addEventListener('click', contar)
-
 function contar() {
-var start = Number(document.getElementById('istart').value)
-var end = Number(document.getElementById('ifim').value)
-var passo = Number(document.getElementById('passo').value)
+let start = Number(document.querySelector('#istart').value)
+let end = Number(document.getElementById('ifim').value)
+let passo = Number(document.getElementById('passo').value)
 
     res.innerHTML = ''
 
-    if (passo == 0 || passo == '') {
+    if (passo === 0 || passo === '') {
         passo = 1
     }
 
@@ -24,4 +23,5 @@ var passo = Number(document.getElementById('passo').value)
         res.innerHTML += `<p>${start}</p>`
         start = start - passo
     }
-}}
+  }
+}

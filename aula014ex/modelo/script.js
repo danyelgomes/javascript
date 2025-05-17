@@ -4,10 +4,12 @@ btn.addEventListener('click', geraTabuada)
 function geraTabuada() {
 var inp = Number(document.getElementById('tab').value)
 var res = window.document.querySelector('.div2')
+let select = document.querySelector('select')
 
-
-res.innerHTML = ''
+select.innerHTML = ''
 for (cont = 0; cont <= 10; cont++) {
     var s = cont * inp
-    res.innerHTML += `${inp} x ${cont} = ${s}<br>`
+    let item = document.createElement('option')
+    item.innerHTML = `${inp} x ${cont} = ${s}`
+    select.appendChild(item)
 }}
