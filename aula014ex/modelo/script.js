@@ -3,7 +3,6 @@ btn.addEventListener('click', geraTabuada)
 
 function geraTabuada() {
 var inp = Number(document.getElementById('tab').value)
-var res = window.document.querySelector('.div2')
 let select = document.querySelector('select')
 
 select.innerHTML = ''

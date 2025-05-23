@@ -1,4 +1,4 @@
-var c = 1
+let c = 1
 
 do {
     console.log(`Passo ${c}`)
